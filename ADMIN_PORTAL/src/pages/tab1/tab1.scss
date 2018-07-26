@@ -1,0 +1,25 @@
+page-tab1 {
+  ion-icon {
+      font-size: 50px;
+    }
+  
+    ion-row {
+      height: 100%;
+      flex-wrap: wrap;
+    }
+  
+    ion-col {
+      flex: 0 0 25%;
+      max-width: 25%;
+      text-align: center;
+      padding: 10px 5px;
+    }
+
+    .bg-image{ 
+      background-image: url('../assets/imgs/PICS1.PNG');   
+      background-position: center; 
+      background-size: cover;   
+      background-repeat: no-repeat;      
+    }   
+
+}    

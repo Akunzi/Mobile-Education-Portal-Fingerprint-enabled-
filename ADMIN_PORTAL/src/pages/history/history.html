@@ -1,0 +1,37 @@
+<ion-header>
+    
+    <ion-navbar>
+      <ion-title>history</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding> 
+    <ion-item>    
+      <ion-input [(ngModel)]="history.BBF"></ion-input>   
+    </ion-item>   
+  
+    <ion-item>    
+      <ion-input [(ngModel)]="history.SF"></ion-input>   
+    </ion-item>    
+  
+    <ion-item>    
+      <ion-input [(ngModel)]="history.OC"></ion-input>   
+    </ion-item> 
+    
+    <ion-item>    
+      <ion-input [(ngModel)]="history.TAE"></ion-input>   
+    </ion-item> 
+  
+    <ion-item>    
+      <ion-input [(ngModel)]="history.TAP"></ion-input>   
+    </ion-item>  
+  
+    <ion-item>    
+      <ion-input [(ngModel)]="history.TAO"></ion-input>    
+    </ion-item>  
+   
+    <button ion-button clear block (click)="viewhistory()">View history</button>    
+  </ion-content> 
+  

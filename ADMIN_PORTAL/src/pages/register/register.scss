@@ -1,0 +1,26 @@
+page-register {
+    .pics{
+        width: 60px;   
+        height: 50px; 
+        float: right;  
+      }
+
+    .real{
+        background-image: url('../assets/imgs/sub.jpg');
+        background-size: contain;  
+    } 
+
+    .scroll-content{
+        align-content: center; 
+        justify-content: center;
+        text-align: center;  
+      }      
+ 
+      .dia{  
+        background-image: url('../assets/imgs/PICS1.PNG');   
+        background-position: center; 
+        background-size: cover;   
+        background-repeat: no-repeat;        
+      }     
+  
+}      

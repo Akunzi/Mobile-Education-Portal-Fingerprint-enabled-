@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-navbar>
+    <ion-buttons start>
+        <button ion-button menuToggle> 
+          <ion-icon style="color:blueviolet;" name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+  
+    <ion-title>CONTACT</ion-title>  
+  </ion-navbar>
+ 
+</ion-header> 
+    
+<ion-content class="cards-bg" class="bg-image">
+    <ion-card-header><b>Institution</b></ion-card-header>
+     <ion-list> 
+      <ion-item> 
+          <ion-label>School Email</ion-label>  
+          <ion-select interface="action-sheet">  
+              <ion-option>Aldc@covenantuniversity.edu.ng</ion-option> 
+              <ion-option>Registrar@covenantuniversity.edu.ng</ion-option>     
+          </ion-select>  
+        </ion-item>       
+                 
+      <ion-item> 
+        <ion-label>Contact-numbers</ion-label>  
+        <ion-select interface="popover"> 
+          <ion-option>+2348122334455</ion-option>
+          <ion-option>+2348166778899</ion-option>
+          <ion-option>+188991100</ion-option>  
+        </ion-select> 
+      </ion-item>  
+      
+      <ion-item>
+        <ion-label>Website platforms</ion-label> 
+        <ion-select interface="action-sheet"> 
+          <ion-option>Covenantuniversity.edu.ng</ion-option>
+          <ion-option>Portal.covenantuniversity.edu.ng</ion-option> 
+          <ion-option (ionSelect)="notificationSelect($event)">Moodle.covenantuniversity.edu.ng</ion-option>
+        </ion-select>  
+      </ion-item>    
+
+    </ion-list> 
+   
+  <ion-card-header><b>Location</b></ion-card-header> 
+
+     <div #map id="my-map"></div>  
+  
+  </ion-content> 
+  
+    
+
+ 

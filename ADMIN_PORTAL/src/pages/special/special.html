@@ -1,0 +1,50 @@
+<ion-header>
+    
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon style="color:blueviolet;" name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>GRADING</ion-title>  
+  </ion-navbar>   
+
+</ion-header>   
+ 
+<ion-content class="grid-basic-page" class="bg-image">  
+
+  <ion-card style="height:100px; Text-align:center; padding: 12px 0 0 10px;">      
+    <ion-label style="font-weight:bolder; font-size:25px; color:blueviolet">STUDENT GRADING</ion-label>   
+    <blockquote> </blockquote>       
+  </ion-card>        
+          
+  
+      <ion-list>    
+        <ion-item>    
+          <ion-label>14CG017751</ion-label>    
+          <ion-input type="text" placeholder="Test1" [(ngModel)]="grade.student751"></ion-input>   
+          <ion-input type="text" placeholder="Test2" [(ngModel)]="grade1.student751"></ion-input> 
+        </ion-item>   
+
+        <ion-item> 
+            <ion-label>14CG017752</ion-label>    
+            <ion-input type="text" placeholder="Test1" [(ngModel)]="grade.student752"></ion-input>  
+            <ion-input type="text" placeholder="Test2" [(ngModel)]="grade1.student752"></ion-input>
+          </ion-item>    
+   
+          <ion-item> 
+              <ion-label>14CG017753</ion-label>    
+              <ion-input type="text" placeholder="Test1" [(ngModel)]="grade.student753"></ion-input> 
+              <ion-input type="text" placeholder="Test2" [(ngModel)]="grade1.student753"></ion-input>    
+            </ion-item>
+     
+            <ion-item> 
+                <ion-label>14CG017754</ion-label>  
+                <ion-input type="text" placeholder="Test1" [(ngModel)]="grade.student754"></ion-input> 
+                <ion-input type="text" placeholder="Test2" [(ngModel)]="grade1.student754"></ion-input>    
+              </ion-item>  
+
+              <ion-label style="text-align: center"><button ion-button (click)="uploadgrade()" class="real">Upload</button> </ion-label>
+      </ion-list>    
+ 
+  </ion-content>        

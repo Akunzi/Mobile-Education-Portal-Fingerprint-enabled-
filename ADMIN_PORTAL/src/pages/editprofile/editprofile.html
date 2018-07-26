@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><img style="float:right; width:60px; height:50px;" src="assets/imgs/CU.jpg"/></ion-title> 
+  </ion-navbar> 
+
+</ion-header>  
+  
+
+<ion-content padding class="bg-image">     
+     
+  <ion-card>
+    <ion-card-header>PROFILE DETAILS</ion-card-header>   
+  </ion-card> 
+  <p> Name: <b>{{(profileData | async)?.username}}</b>  
+    <ion-input type="text" placeholder="Fullname" [(ngModel)]="profile.username"></ion-input></p>  
+
+  <p>Gender: <b>{{(profileData | async)?.firstName}}</b>
+    <ion-input type="text" placeholder="Gender" [(ngModel)]="profile.firstName"></ion-input></p> 
+
+  <p>Date of Birth: <b>{{(profileData | async)?.lastName}}</b>
+    <ion-input type="number" placeholder="Date of Birth" [(ngModel)]="profile.lastName"></ion-input></p>  
+
+  <p>Department: <b>{{(profileData | async)?.dept}}</b>
+  <ion-input type="text" placeholder="Department" [(ngModel)]="profile.dept"></ion-input></p>     
+ 
+  <p>Course Taught: <b>{{(profileData | async)?.course}}</b> 
+    <ion-input type="text" placeholder="Course Taught" [(ngModel)]="profile.course"></ion-input></p>  
+      
+  <p class="cen"><button ion-button round (click)="createProfile()" class="change">Change</button></p>  
+   
+</ion-content>           

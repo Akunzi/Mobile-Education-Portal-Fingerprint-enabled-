@@ -1,0 +1,68 @@
+<ion-header>
+ 
+  <ion-navbar>
+    <ion-buttons start>
+        <button ion-button menuToggle> 
+          <ion-icon style="color:blueviolet;" name="menu"></ion-icon> 
+        </button> 
+      </ion-buttons>
+  <ion-title>COURSES</ion-title>  
+</ion-navbar>  
+
+</ion-header>  
+
+<ion-content padding class="bg-image">  
+
+    <ion-card style="height:400px;">        
+
+      <ion-card-header>   
+        Select Course      
+      </ion-card-header> 
+ 
+      <ion-card-content>   
+
+              <ion-list-header>
+                Characters
+              </ion-list-header>  
+
+              <ion-item> 
+                <ion-input type="text" placeholder="CSC 441" [(ngModel)]="course.one"></ion-input>  
+              </ion-item>   
+         
+              <ion-item> 
+                  <ion-input type="text" placeholder="CSC 443" [(ngModel)]="course.two"></ion-input>  
+                </ion-item>   
+        
+                <ion-item> 
+                    <ion-input type="text" placeholder="CSC 444" [(ngModel)]="course.three"></ion-input>     
+                  </ion-item> 
+        
+                  <ion-item> 
+                      <ion-input type="text" placeholder="CSC 446" [(ngModel)]="course.four"></ion-input>      
+                    </ion-item> 
+          
+                    <ion-item> 
+                        <ion-input type="text" placeholder="CSC 424" [(ngModel)]="course.five"></ion-input>        
+                      </ion-item>  
+                      <button ion-button round (click)="add()">Add Courses</button>   
+        </ion-card-content>  
+    </ion-card>  
+     
+    <p style="float:right; font-weight:bold;">Units:</p>  
+    <p style="float:right; font-weight:bold;">Total</p>  
+    <ion-card style="height:200px; width:180px;">     
+        <ion-card-header> 
+          My Courses  
+        </ion-card-header>    
+  
+        <ion-card-content>
+            <ion-list>   
+             <ion-item>{{(courseData | async)?.one}}</ion-item>  
+             <ion-item>{{(courseData | async)?.two}}</ion-item>  
+             <ion-item>{{(courseData | async)?.three}}</ion-item> 
+             <ion-item>{{(courseData | async)?.four}}</ion-item> 
+             <ion-item>{{(courseData | async)?.five}}</ion-item>   
+            </ion-list>
+          </ion-card-content>   
+      </ion-card>  
+</ion-content>    

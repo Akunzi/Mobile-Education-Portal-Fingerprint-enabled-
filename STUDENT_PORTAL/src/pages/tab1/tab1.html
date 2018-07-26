@@ -1,0 +1,58 @@
+ 
+   
+<ion-header> 
+  <ion-navbar>    
+<ion-buttons start> 
+ <button ion-button menuToggle> 
+   <ion-icon style="color:blueviolet;" name="menu"></ion-icon>    
+ </button>
+</ion-buttons>
+   <ion-title>HOME</ion-title>    
+</ion-navbar> 
+</ion-header>     
+
+
+<ion-content padding class="cards-bg" class="bg-image">   
+   
+    <ion-card>    
+      <div>    
+        <img src="assets/imgs/D.png"/>            
+      </div> 
+  
+      <ion-card-content>
+        <ion-card-title>  
+          PROFILE   
+        </ion-card-title>   
+        <p> Name: <b>{{(profileData | async)?.username}}</b></p>     
+        <p>Gender: <b>{{(profileData | async)?.firstName}}</b></p>    
+        <p>Date of Birth: <b>{{(profileData | async)?.lastName}}</b></p>       
+        <p>Department: <b>{{(profileData | async)?.level}}</b></p>  
+        <p>Course Taught: <b>{{(profileData | async)?.program}}</b></p>    
+
+      </ion-card-content>    
+     
+      <blockquote> <p style="color:red; font-weight:bold;">Click any to View... </p></blockquote> 
+      <ion-row no-padding>    
+        <ion-col>    
+          <button ion-button (click)="cv()" clear small  style="color:rgb(51, 139, 0);" icon-start> 
+            <ion-icon name='document' style="color:rgb(51, 139, 0);"></ion-icon>    
+            CV 
+          </button>   
+        </ion-col>
+        <ion-col text-center> 
+          <button ion-button (click)="port()" clear small style="color:yellow;" icon-start> 
+            <ion-icon name='briefcase' style="color:yellow;"></ion-icon>  
+            Portfolio
+          </button>
+        </ion-col> 
+        <!-- <ion-col text-right>
+          <button ion-button clear small (click)="logout()"  style="color:royalblue" icon-start> 
+            <ion-icon name='share' style="color:royalblue"></ion-icon>   
+            Share
+          </button>
+        </ion-col>  -->  
+      </ion-row>  
+  
+    </ion-card> 
+  
+  </ion-content>

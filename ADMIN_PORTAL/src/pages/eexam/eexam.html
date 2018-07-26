@@ -1,0 +1,25 @@
+<ion-header>  
+
+    <ion-navbar>  
+        <ion-buttons start> 
+            <button ion-button menuToggle>
+              <ion-icon style="color:blueviolet;" name="menu"></ion-icon>   
+            </button>
+          </ion-buttons>
+    <ion-title><img style="float:left; width:60px; height:50px;" src="assets/imgs/CU.jpg"/></ion-title> 
+  </ion-navbar> 
+
+</ion-header> 
+
+<ion-content padding>    
+    <ion-label style="font-weight:bolder">FINGER-PRINT BIOMETRICS</ion-label> 
+    <ion-label>Required</ion-label>
+    <ion-icon name="finger-print" style="color:rgb(128, 47, 0); font-size:200px"></ion-icon>      
+    
+    <ion-card style="height:100px; font-weight:bold; font-size:25px">   
+            E-EXAM  
+    </ion-card>   
+
+      <button (click)="example()">Upload Questions</button>    
+      <button ion-button (click)="finger()">Show FingerprintAIO Dialog</button>  
+</ion-content>                    

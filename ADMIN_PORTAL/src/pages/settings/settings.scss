@@ -1,0 +1,27 @@
+page-settings {
+    .col {
+        color: darkviolet; 
+    }
+ 
+    .row {
+        height: 100px; 
+        width: 100px; 
+        align-content: center; 
+        justify-content: center;
+        text-align: center;     
+    }   
+
+    .scroll-content{
+        align-content: center; 
+        justify-content: center;
+        text-align: center;  
+      }   
+ 
+    .bg-image{   
+        background-image: url('../assets/imgs/PICS1.PNG');   
+        background-position: center; 
+        background-size: cover;   
+        background-repeat: no-repeat;       
+      }    
+
+ }    

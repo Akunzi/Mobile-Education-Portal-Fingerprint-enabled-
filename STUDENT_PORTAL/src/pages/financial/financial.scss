@@ -1,0 +1,57 @@
+page-financial {
+    ion-card {
+     padding: 100; 
+    }
+  
+   .quail{
+    align-content: center; 
+    justify-content: center; 
+    text-align: center;     
+   }   
+   
+    p {
+     .item-inner{ 
+      margin-right: 15px;   
+    }  font-size: 15px;        
+    }
+  
+    a{
+      text-align: center;
+      display: block;
+      font-size: 15px;     
+    }
+  
+    .bg-image{ 
+      background-image: url('../assets/imgs/PICS1.PNG');   
+      background-position: center; 
+      background-size: cover;   
+      background-repeat: no-repeat;      
+    }   
+  
+    .imgs{ 
+      background-image: url('../assets/imgs/sub.jpg');   
+      background-position: center;  
+      background-size: cover;   
+      background-repeat: no-repeat;          
+    }   
+  
+   .See{
+       align-items: left;  
+       width: 150px; 
+       padding: 10px 5px;
+       
+   }
+  
+   .Fee{
+     align-items: right;  
+     width: 150px; 
+     padding: 10px 5px;
+  }
+  
+   .pos{
+     padding: 5px;
+     padding-right: 35px ;  
+     padding-left: 35px ;     
+   }  
+  }
+  

@@ -1,0 +1,48 @@
+<ion-header> 
+  
+  <ion-navbar> 
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon style="color:blueviolet;" name="menu"></ion-icon> 
+          </button>
+        </ion-buttons>  
+    <ion-title>FINANCE</ion-title>     
+  </ion-navbar>  
+ 
+</ion-header> 
+
+<ion-content padding class="bg-image"> 
+    <ion-list>       
+        <ion-list inset>       
+          <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">     
+            {{ item }} 
+          </button>
+        </ion-list>  
+     
+        <ion-item class="bg-image">          
+          <ion-label><ion-icon style="color:green; font-size:70px;" name="cash"></ion-icon></ion-label> 
+          <ion-label style="font-weight:bold; width:150px; font-size:18px; float:right;">FEES</ion-label>                 
+        </ion-item>      
+   
+      </ion-list>    
+
+      <ion-card><a class="pos">FEE PAYMENT</a></ion-card>     
+
+     <ion-item>   
+      <ion-label style="font-size:15px" stacked>Amount</ion-label>   
+      <ion-input type="text" [(ngModel)]="fees.figure"></ion-input>    
+    </ion-item>  
+                     
+     <ion-item> 
+      <ion-label style="font-size:15px">Purpose</ion-label>    
+      <ion-select [(ngModel)]="gaming" interface="popover">  
+        <ion-option value="nes">School</ion-option> 
+        <ion-option value="n64">Medical</ion-option>     
+        <ion-option value="ps">Damages</ion-option>  
+        <ion-option value="mad">Others</ion-option>         
+      </ion-select> 
+    </ion-item>        
+
+    <p> </p>    
+    <p class="way"><button ion-button (click)="payfees()" class="real">Pay</button></p>        
+</ion-content>                     

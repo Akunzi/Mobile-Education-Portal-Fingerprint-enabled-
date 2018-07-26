@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar> 
+    <ion-title class="pics"><img src="assets/imgs/CU.jpg"/></ion-title>
+  </ion-navbar>
+</ion-header>     
+ 
+<ion-content class="dia" padding>    
+    <ion-card>   
+        <ion-card-header>   
+           REGISTRATION FORM         
+        </ion-card-header>  
+      </ion-card>      
+  
+    <ion-item>  
+        <ion-input type="text" #username placeholder="Username(Email)" [(ngModel)]="user.email"></ion-input> 
+      </ion-item>   
+ 
+      <ion-item>  
+          <ion-input type="text" placeholder="Fullname" [(ngModel)]="profile.username"></ion-input>   
+        </ion-item>   
+
+        <ion-item> 
+            <ion-input type="text" placeholder=Gender [(ngModel)]="profile.firstName"></ion-input>     
+          </ion-item> 
+
+          <ion-item> 
+              <ion-input type="text" placeholder="Date of Birth" [(ngModel)]="profile.lastName"></ion-input>      
+            </ion-item> 
+  
+            <ion-item> 
+                <ion-input type="text" placeholder="Level"></ion-input>  
+              </ion-item> 
+
+              <ion-item> 
+                  <ion-input type="text" placeholder="Programme"></ion-input>  
+                </ion-item>  
+    
+      <ion-item> 
+        <ion-input type="password" #password placeholder="Password" [(ngModel)]="user.password"></ion-input>    
+      </ion-item> 
+
+      <ion-item>    
+        <ion-input type="password" placeholder="Confirm-Password"></ion-input>      
+      </ion-item>  
+        
+        <blockquote><button ion-button class="real" (click)="register(user)" (click)="createProfile()" (click)="registered()">Register</button> </blockquote>
+                
+
+</ion-content>              

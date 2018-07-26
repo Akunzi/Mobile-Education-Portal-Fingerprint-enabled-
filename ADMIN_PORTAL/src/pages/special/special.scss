@@ -1,0 +1,29 @@
+page-special {
+    ion-col div {
+        background-color: #f0f5ff;
+        border: 1px solid #e6e9ee;
+        border-radius: 2px;
+        padding: 5px;
+        text-align: center;
+      }
+    
+      p {
+        padding: 10px 0 0 10px !important; 
+        margin: 0;
+      }
+
+      .bg-image{ 
+        background-image: url('../assets/imgs/PICS1.PNG');   
+        background-position: center; 
+        background-size: cover;   
+        background-repeat: no-repeat;      
+      }  
+      
+      .real{
+        background-image: url('../assets/imgs/sub.jpg');
+        background-size: contain;  
+        align-content: center;
+        justify-content: center; 
+        text-align: center;   
+      }  
+} 

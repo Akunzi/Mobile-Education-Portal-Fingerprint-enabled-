@@ -1,0 +1,38 @@
+
+<ion-header> 
+  <ion-navbar>
+    <ion-title></ion-title>   
+  </ion-navbar>
+</ion-header>    
+
+<ion-content padding class="bg-image" > 
+  <div class="place">
+      <img style="width:120px; height:100px;" src="assets/imgs/CULogo.png"/>     
+  </div>
+  <ion-card>    
+   <ion-card-header>    
+      Login Form       
+   </ion-card-header>
+
+   <ion-card-content>  
+     <ion-list no-line>   
+
+      <ion-item>     
+  <ion-input type="text" #username [(ngModel)]="user.email" placeholder="Username"></ion-input>   
+</ion-item>   
+
+<ion-item> 
+  <ion-input style="color:black" #password type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>        
+</ion-item> 
+ 
+       <a>Forgot your login detail?<b>Get help</b></a>     
+       <button ion-button block outline color="light" full (click)="login(user)" (click)="doLogin()" (click)="loggedin()">Log in</button>
+       <!--<button ion-butto (click)="login(user)" (click)="redirect()">Forgot Password</button>  --> 
+      </ion-list>       
+  </ion-card-content>            
+</ion-card>       
+<ion-footer>  
+    <button ion-button round class="real" color="light" (click)="register()">Register</button>     
+  </ion-footer>             
+</ion-content>      
+              

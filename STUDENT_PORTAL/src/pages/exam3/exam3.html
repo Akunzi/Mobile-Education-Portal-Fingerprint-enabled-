@@ -1,0 +1,50 @@
+<ion-header>  
+
+  <ion-navbar>
+    <ion-title>EXAM IN PROGRESS</ion-title> 
+  </ion-navbar>
+
+</ion-header>  
+ 
+<ion-content padding>
+  <ion-card>  
+    <ion-card-header>  
+      COURSE: CSC444   
+    </ion-card-header>   
+  </ion-card> 
+  
+  <ion-label>{{(examData | async)?.no_1}})</ion-label>   
+  <ion-label style="width:100%">{{(examData | async)?.question_1}}</ion-label>   
+     
+  <form (submit)="doSubmit($event)" [formGroup]="langForm">  
+    <ion-list radio-group formControlName="langs">    
+
+      <ion-item>
+        <ion-label>{{(examData | async)?.opt1_1}} </ion-label>   
+        <ion-radio value="golang" checked="true"></ion-radio>     
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{(examData | async)?.opt2_1}}</ion-label>  
+        <ion-radio value="rust"></ion-radio> 
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{(examData | async)?.opt3_1}}</ion-label>   
+        <ion-radio value="python"></ion-radio> 
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{(examData | async)?.opt4_1}}</ion-label>     
+        <ion-radio value="ruby"></ion-radio> 
+      </ion-item>  
+ 
+    </ion-list>  
+  </form>  
+  <ion-buttons style="float:right">     
+    <button ion-button (click)="done()">       
+      <ion-icon name="arrow-forward"></ion-icon>    
+    </button>   
+  </ion-buttons> 
+</ion-content>           
+  

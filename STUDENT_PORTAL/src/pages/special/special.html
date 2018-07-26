@@ -1,0 +1,142 @@
+<ion-header>
+    
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon style="color:blueviolet;" name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>GRADING</ion-title>
+  </ion-navbar>  
+
+</ion-header> 
+ 
+<ion-content class="grid-basic-page" class="bg-image">  
+  
+  
+    <p padding>
+      MIDSEMESTER 
+    </p>
+    <ion-grid> 
+
+      <ion-row>
+        <ion-col>
+          <div>Course</div>
+        </ion-col>
+        <ion-col>
+          <div>Test</div> 
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div>{{(courseData | async)?.one}}</div> 
+        </ion-col>
+        <ion-col>
+          <div>{{(gradeData | async)?.student751}}/15</div> 
+        </ion-col>
+        <ion-col>
+          <div>{{(grade1Data | async)?.student751}}/15</div>    
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col> 
+            <div>{{(courseData | async)?.two}}</div>   
+          </ion-col>
+          <ion-col>
+            <div>{{(gradeData | async)?.student752}}/15</div>  
+          </ion-col>
+          <ion-col>
+            <div>{{(grade1Data | async)?.student752}}/15</div>   
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+              <div>{{(courseData | async)?.three}}</div>
+            </ion-col>
+            <ion-col>
+              <div>{{(gradeData | async)?.student753}}/15</div>
+            </ion-col>
+            <ion-col>
+              <div>{{(grade1Data | async)?.student753}}/15</div>   
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+              <ion-col> 
+                <div>{{(courseData | async)?.four}}</div>   
+              </ion-col>
+              <ion-col>
+                <div>{{(gradeData | async)?.student754}}/15</div>   
+              </ion-col>
+              <ion-col>
+                <div>{{(grade1Data | async)?.student754}}/15</div>    
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                  <div>{{(courseData | async)?.five}}</div> 
+                </ion-col>
+                <ion-col>
+                  <div>0/15</div>
+                </ion-col>
+                <ion-col>
+                  <div>0/15</div> 
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                  <ion-col>
+                    <div>CSC</div>
+                  </ion-col>
+                  <ion-col>
+                    <div>0/15</div>
+                  </ion-col>
+                  <ion-col>
+                    <div>0/15</div> 
+                  </ion-col>
+                </ion-row>
+
+
+                <ion-row>
+                    <ion-col>
+                      <div>GST</div>
+                    </ion-col>
+                    <ion-col>
+                      <div>0/15</div>
+                    </ion-col>
+                    <ion-col>
+                      <div>0/15</div> 
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                      <ion-col>
+                        <div>TMC</div>
+                      </ion-col>
+                      <ion-col>
+                        <div>0/15</div>
+                      </ion-col>
+                      <ion-col>
+                        <div>0/15</div> 
+                      </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col>
+                          <div>EDS</div>
+                        </ion-col>
+                        <ion-col>
+                          <div>0/15</div>
+                        </ion-col>
+                        <ion-col>
+                          <div>0/15</div> 
+                        </ion-col>
+                      </ion-row> 
+
+    </ion-grid>  
+  
+  </ion-content> 

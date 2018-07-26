@@ -1,0 +1,22 @@
+page-editprofile {
+    .bg-image{ 
+        background-image: url('../assets/imgs/PICS.jpg');   
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;    
+      }     
+       
+      .change{
+        background-image: url('../assets/imgs/sub.jpg');
+        background-size: contain;  
+        align-content: center;
+        justify-content: center; 
+        text-align: center;  
+      } 
+
+      .cen{
+        align-content: center;
+        justify-content: center; 
+        text-align: center;  
+      } 
+}      

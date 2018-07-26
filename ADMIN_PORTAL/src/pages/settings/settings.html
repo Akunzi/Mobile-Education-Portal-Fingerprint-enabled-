@@ -1,0 +1,62 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+        <button ion-button menuToggle> 
+          <ion-icon style="color:blueviolet;" name="menu"></ion-icon> 
+        </button> 
+      </ion-buttons>
+  <ion-title>SETTINGS</ion-title>     
+</ion-navbar>  
+</ion-header>
+
+<ion-content padding class="bg-image">  
+  <ion-list no-border>
+
+    <p style="font-size:20px; font-weight: bold; font-family: 'Times new Roman';">PERSONAL DETAIL</p>   
+    
+    <ion-label style="text-align: center">
+      <button ion-button round clear style="background-image: url('../assets/imgs/Contact1.png');   
+      background-position: center; 
+      background-size: cover;    
+      background-repeat: no-repeat; width:150px; height: 150px"></button>   
+    </ion-label>       
+                
+    <blockquote> </blockquote>    
+    <blockquote> </blockquote>  
+    <ion-item>
+      <ion-toggle checked="false" (click)="editprofile()"></ion-toggle>  
+      <ion-label>
+        My Profile    
+      </ion-label>    
+        
+      <ion-icon name='contact'  style="color:rgb(1, 139, 13)" item-start></ion-icon>           
+    </ion-item>   
+
+    <ion-item>  
+      <ion-toggle checked="false" (click)="editcv()"></ion-toggle>    
+      <ion-label>  
+        CV information    
+      </ion-label>
+      <ion-icon name='paper' style="color:royalblue" item-start></ion-icon>    
+    </ion-item>  
+
+    <ion-item>     
+      <ion-label>Change Password </ion-label>  
+      <ion-icon name='key' style="color:red" item-start></ion-icon>     
+    </ion-item>   
+ 
+  </ion-list> 
+
+  <ion-item><p> Customization <ion-icon class="col" name='apps'></ion-icon></p></ion-item>  
+
+  <ion-list> 
+     
+    <ion-item>      
+      <ion-label>Change background</ion-label>   
+      <ion-icon name='image' style="color:rgb(255, 136, 0)" item-start></ion-icon> 
+    </ion-item>  
+
+  </ion-list>     
+  <button (click)="editcv()"></button>  
+</ion-content>   

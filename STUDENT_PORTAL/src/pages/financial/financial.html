@@ -1,0 +1,43 @@
+<ion-header>   
+  
+  <ion-navbar>  
+      <ion-buttons start> 
+          <button ion-button menuToggle>
+            <ion-icon style="color:blueviolet;" name="menu"></ion-icon>   
+          </button>
+        </ion-buttons>  
+    <ion-title>FINANCE</ion-title>        
+  </ion-navbar>    
+ 
+</ion-header>   
+
+<ion-content padding class="bg-image">     
+    
+   
+    <ion-list>       
+        <ion-list inset>        
+          <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">     
+            {{ item }} 
+          </button>
+        </ion-list>   
+     
+        <ion-item class="bg-image">          
+          <ion-label><ion-icon style="color:green; font-size:70px;" name="cash"></ion-icon></ion-label> 
+          <ion-label style="font-weight:bold; width:150px; font-size:18px; float:right;">Pay Fee</ion-label>           
+          <ion-toggle style="width:30px;" value="foo" (click)="payfee()"></ion-toggle>                        
+        </ion-item>     
+   
+      </ion-list>    
+          
+     <ion-card><a class="pos">PAYMENT HISTORY </a></ion-card>   
+     
+     <form>
+     <ion-list>  
+       <ion-item><p>Balance Brought Forward</p>0.00</ion-item>  
+       <ion-item><p>School Fees for 2017/2018</p>650,720.00</ion-item>
+       <ion-item><p>Other Charges</p>0.00</ion-item>
+       <ion-item><p>Total Amount Expected</p>650,720.00</ion-item>  
+       <ion-item><p>Total Amount Paid</p>{{(feesData | async)?.figure}}.00</ion-item>       
+    </ion-list>  
+    </form>  
+</ion-content>                      

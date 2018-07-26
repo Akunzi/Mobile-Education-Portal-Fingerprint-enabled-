@@ -1,0 +1,40 @@
+<ion-header> 
+  
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+            <ion-icon style="color:blueviolet;" name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title><img style="float:right; width:60px; height:50px;" src="assets/imgs/CU.jpg"/></ion-title>   
+  </ion-navbar> 
+ 
+</ion-header>           
+
+<ion-content padding class="bg-image">        
+  <a (click)="edit()" style="float:right"><u>Edit here</u></a>     
+  <p class="mid">STUDENT RESUME APPLICATION</p>      
+  <blockquote></blockquote>   
+  <ion-list>   
+    <p>NAME: {{item.name}}</p>       
+    <p>UNIVERSITY: {{item.university}}<p>         
+    <p>PROGRAM: {{item.program}}</p>     
+    <p>EMAIL-ADDRESS: {{item.email}}</p>     
+    <blockquote></blockquote> 
+    <b>RELEVANT SKILLS</b>     
+    <blockquote></blockquote> 
+    <p>CORE: {{item.core}}</p> 
+    <p>MINOR: {{item.minor}}</p>  
+    <blockquote></blockquote> 
+    <b>PERSONAL PROJECTS {{item.personalprj}}</b>  
+    <blockquote></blockquote>  
+    <b>SCHOOL PROJECTS {{item.schoolprj}}</b> 
+    <blockquote></blockquote>
+    <b>WORKEXPERIENCE {{item.workexp}}<p class="thick"><a>DATE</a></p></b>      
+    <blockquote></blockquote>  
+    <b>VOLUNTEER EXPERIENCE {{item.volunteerexp}}</b>
+    <blockquote></blockquote>  
+    <b>REFERENCE {{item.reference}}</b>   
+    <blockquote></blockquote>  
+  </ion-list>
+</ion-content>                

@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar> 
+    <ion-title><ion-buttons start right>
+        <button ion-button (click)="save()">Save</button>  
+      </ion-buttons></ion-title>
+  </ion-navbar>  
+
+</ion-header>  
+
+
+<ion-content padding class="bg-image">    
+    
+  <ion-item>    
+    <ion-input type="text"  [formControl]="form.get('name')" placeholder="Name"></ion-input>       
+  </ion-item>   
+  <ion-item>     
+    <ion-input type="text" [formControl]="form.get('university')" placeholder="University"></ion-input>     
+  </ion-item> 
+  <ion-item>    
+    <ion-input type="text" [formControl]="form.get('program')" placeholder="Program"></ion-input>     
+  </ion-item> 
+  <ion-item>    
+    <ion-input type="text" [formControl]="form.get('email')" placeholder="Email"></ion-input>    
+  </ion-item> 
+  <blockquote></blockquote>
+  <ion-item>    
+    <ion-input type="text" [formControl]="form.get('core')" placeholder="Core Skill"></ion-input>   
+  </ion-item> 
+  <blockquote></blockquote>
+  <ion-item>    
+    <ion-input type="text" [formControl]="form.get('minor')" placeholder="Minor Skill"></ion-input>        
+  </ion-item> 
+  <ion-item>    
+      <ion-input type="text" [formControl]="form.get('personalprj')" placeholder="Personal Projects"></ion-input>        
+    </ion-item>  
+  <blockquote></blockquote> 
+  <ion-item>    
+      <ion-input type="text" [formControl]="form.get('schoolprj')" placeholder="School Projects"></ion-input>        
+    </ion-item>  
+    <blockquote></blockquote>
+    <ion-item>    
+        <ion-input type="text" [formControl]="form.get('workexp')" placeholder="Work Experience"></ion-input>        
+      </ion-item>  
+    <blockquote></blockquote>  
+    <ion-item>    
+        <ion-input type="text" [formControl]="form.get('volunteerexp')" placeholder="Volunteer Experience"></ion-input>        
+      </ion-item> 
+    <blockquote></blockquote>  
+    <ion-item>    
+        <ion-input type="text" [formControl]="form.get('reference')" placeholder="Reference"></ion-input>        
+      </ion-item>
+
+</ion-content>      

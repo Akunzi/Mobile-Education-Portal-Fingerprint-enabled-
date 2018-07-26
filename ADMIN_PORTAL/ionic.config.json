@@ -1,0 +1,8 @@
+{
+  "name": "portalapp",
+  "app_id": "9704947d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

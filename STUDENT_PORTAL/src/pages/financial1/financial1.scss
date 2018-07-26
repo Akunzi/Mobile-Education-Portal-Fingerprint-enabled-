@@ -1,0 +1,51 @@
+page-financial1{
+    
+    .bg-image{ 
+      background-image: url('../assets/imgs/PICS1.PNG');   
+      background-position: center; 
+      background-size: cover;   
+      background-repeat: no-repeat;      
+    }   
+  
+      .pos{
+        padding: 5px;
+        padding-right: 35px ;  
+        padding-left: 35px ;     
+      }  
+      
+  ion-card {
+    padding: 100; 
+   }  
+  
+   .real{
+    background-image: url('../assets/imgs/sub.jpg');
+    background-size: contain;  
+    align-content: center;
+    justify-content: center; 
+    text-align: center;   
+  }  
+  
+  .way{
+    align-content: center;
+    justify-content: center;
+    text-align: center;  
+  }
+   
+   p {
+    .item-inner{ 
+     margin-right: 15px;   
+   }  font-size: 15px;       
+   }
+  
+   p#schfees{
+    color:black;
+    font-weight: bold;
+   }
+  
+   a{
+     text-align: center;
+     display: block;
+     font-size: 15px;     
+   }
+  
+  } 

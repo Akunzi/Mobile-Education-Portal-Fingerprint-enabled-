@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>UPLOAD QUESTIONS </ion-title> 
+  </ion-navbar>
+
+</ion-header>  
+
+<ion-content padding> 
+
+  <ion-label style="font-weight:bold">QUESTIONS</ion-label>    
+  <ion-input type="number"  placeholder="No" [(ngModel)]="exam.no_0"></ion-input>   
+  <ion-input type="text"  placeholder="Question" [(ngModel)]="exam.question_0"></ion-input>       
+ 
+   <ion-label style="font-weight:bold">OPTIONS</ion-label>    
+   <ion-input type="text"  placeholder="Option 1" [(ngModel)]="exam.opt1_0"></ion-input>     
+   <ion-input type="text"  placeholder="Option 2" [(ngModel)]="exam.opt2_0"></ion-input>
+   <ion-input type="text"  placeholder="Option 3" [(ngModel)]="exam.opt3_0"></ion-input>  
+   <ion-input type="text"  placeholder="Option 4" [(ngModel)]="exam.opt4_0"></ion-input>        
+
+     
+    <button ion-button round  (click)="uploadexam()">           
+        Upload 
+    </button>        
+  
+    
+</ion-content>                 
